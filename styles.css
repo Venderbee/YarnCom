@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+
+/* color 1 #301916  #3c8048 */
+/* color 2 #8A6552  #54a763 */
+/* color 3 #462521  #75bc82 */
+
+html, body {
+    min-height: 100%;
+}
+
+
+body {
+    background: linear-gradient(to right,#3c8048 0%, #3c8048 5%, #54a763 5%, #54a763 10%, #75bc82 10%, #75bc82 15%, #3c8048 15%, #3c8048 20%, #75bc82 20%, #75bc82 25%, #54a763 25%, #54a763 30%, #3c8048 30%, #3c8048 35%, #54a763 35%, #54a763 40%, #75bc82 40%, #75bc82 45%, #3c8048 45%, #3c8048 50%, #54a763 50%, #54a763 55%, #75bc82 55%, #75bc82 60%, #3c8048 60%, #3c8048 65%, #54a763 65%, #54a763 70%, #3c8048 70%, #3c8048 75%, #75bc82 75%, #75bc82 80%, #3c8048 80%, #3c8048 85%, #54a763 85%, #54a763 90%, #75bc82 90%, #75bc82 95%, #3c8048 95%, #3c8048 100%);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    color: #42704a;
+    padding: 32px 32px;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 50px;
+}
+
+.home {
+
+        --s: 20px;  /* control the size of the wave */
+        --w: 600px; /* preferred image width */
+        
+        width: round(var(--w),4*var(--s)); 
+        aspect-ratio: 1;
+        padding: var(--s);
+        border: var(--s) solid #0000;
+        box-sizing: border-box;
+        background: conic-gradient(#ecfab1,#bcffc8,#ecfab1) border-box;
+        border-radius: calc(3.5*var(--s)); 
+        mask: 
+          radial-gradient(calc(sqrt(2)*var(--s)),#000 calc(100% - 1px),#0000),
+          conic-gradient(#000 0 0) content-box,
+          radial-gradient(calc(sqrt(2)*var(--s)),#0000 100%,#000 calc(100% + 1px)) 
+           var(--s) var(--s) padding-box;
+        mask-size: calc(var(--s)*4) calc(var(--s)*4);
+  }
